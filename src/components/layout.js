@@ -5,9 +5,9 @@ import "../styles/global.scss"
 
 
 const Layout = ({ children }) => ( 
-    <div id="main-container">
+    <div id="container">
         <Header />
-        <div>
+        <div className="content">
             {children}
         </div>
     </div>
