@@ -1,0 +1,20 @@
+on: push
+
+jobs:
+
+  sync:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    steps:
+    - name: Set repository as working directory
+      uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm install
+    - name: Build page
+      run: npm run build
+    - name: Sync files with S3 bucket
+      run: aws s3 sync ./public s3://torijacarlos.com
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
