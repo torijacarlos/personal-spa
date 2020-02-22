@@ -12,10 +12,10 @@ const Header = () => (
                 <Link to="/resume">resume</Link>
             </div>
             <div className="header__social">
-                <a href="https://github.com/torijacarlos/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/torijacarlos/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                <a href="https://linkedin.com/in/torijacarlos/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                <a href="https://instagram.com/torijacarlos.stuff/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/torijacarlos/" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
+                <a href="https://twitter.com/torijacarlos/" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com/in/torijacarlos/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/torijacarlos.stuff/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
             </div>
         </div>
     </div>
