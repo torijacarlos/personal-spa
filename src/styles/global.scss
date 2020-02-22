@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+@import "./variables";
+
+
+html {
+    background-color: $background;
+
+    // box model
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    // typography
+    font-family: 'Alata', 'sans-serif';
+    color: $font-color;
+    font-size: 16px;
+}
+
+#main-container {
+    // box model
+    padding: 0 15%;
+}
+
+.white-font {
+    color: $white;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 3em 0;
+
+    &__title {
+        font-size: 3em;
+        color: $title-color;
+    }
+
+    &__nav {
+        display: flex;
+        a {
+            color: $primary;
+            margin-left: 0.3em;
+            &:active, &:visited {
+                color: $primary-light;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        margin-bottom: 0.5em;
+    }
+  }
+}
+
+@media print {
+  @page {
+      background-color: $white !important;
+      color: $black !important;
+      font-size: 14px;
+  }
+}
