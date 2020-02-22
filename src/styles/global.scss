@@ -46,6 +46,8 @@ html {
 
     &__nav {
         display: flex;
+        flex-direction: column-reverse;
+        text-align: right;
         a {
             color: $primary;
             margin-left: 0.3em;
@@ -88,6 +90,10 @@ html {
 
     .header__title {
         margin-bottom: 0.5em;
+    }
+
+    .header__nav {
+        text-align: center;
     }
 
     .content__image {
