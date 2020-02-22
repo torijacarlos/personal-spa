@@ -93,6 +93,16 @@ module.exports = {
     ],
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-44676917-3",
+        head: true,
+        anonymize: true,
+        respectDNT: true,
+        pageTransitionDelay: 0,
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {

@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const Header = () => (
     <div className="header">
@@ -12,10 +13,10 @@ const Header = () => (
                 <Link to="/resume">resume</Link>
             </div>
             <div className="header__social">
-                <a href="https://github.com/torijacarlos/" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
-                <a href="https://twitter.com/torijacarlos/" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
-                <a href="https://linkedin.com/in/torijacarlos/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
-                <a href="https://instagram.com/torijacarlos.stuff/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+                <OutboundLink href="https://github.com/torijacarlos/" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></OutboundLink>
+                <OutboundLink href="https://twitter.com/torijacarlos/" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></OutboundLink>
+                <OutboundLink href="https://linkedin.com/in/torijacarlos/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></OutboundLink>
+                <OutboundLink href="https://instagram.com/torijacarlos.stuff/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></OutboundLink>
             </div>
         </div>
     </div>
