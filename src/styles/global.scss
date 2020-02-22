@@ -133,9 +133,15 @@ html {
 }
 
 .additional {
+    display: flex;
     flex-basis: 20%;
+    flex-direction: column;
+    align-items: center;
     &__card {
         margin: 0.5em 0;
+    }
+    &__cert {
+        width: 70%;
     }
 }
 
@@ -151,6 +157,9 @@ html {
 @media screen and (max-width: 900px) {
     .experience, .additional {
         flex-basis: 100%;
+    }
+    .additional__cert {
+        width: 40%;
     }
 }
 
