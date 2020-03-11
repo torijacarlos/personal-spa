@@ -48,10 +48,18 @@ html {
     }
 }
 
+@mixin link-style($color) {
+    color: $color !important;
+    text-decoration: none;
+    &:active, &:visited {
+        color: $primary;
+    }
+}
+
 .header {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 3em 0;
@@ -61,25 +69,29 @@ html {
         color: $title-color;
         font-weight: bold;
         a {
-            color: $primary;
-            text-decoration: none;
-            &:active, &:visited {
-                color: $primary;
-            }
+            @include link-style($primary);
         }
     }
 
     &__nav {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row;
         text-align: right;
         a {
-            color: $primary;
-            margin-left: 0.3em;
-            text-decoration: none;
-            &:active, &:visited {
-                color: $primary-light;
-            }
+            @include link-style($primary);
+            margin-left: 1em;
+            padding-bottom: 5px;
+            border-bottom: 1px solid $primary;
+        }
+    }
+
+    &__social  {
+        margin-left: 4em;
+        a {
+            @include link-style($white);
+            margin-left: 0.4em;
+            border-bottom: 0;
+            padding-bottom: 0;
         }
     }
 }
@@ -174,28 +186,28 @@ html {
     .additional__cert {
         width: 40%;
     }
-}
+    .header {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        &__title {
+            margin-bottom: 0.5em;
+        }
+        &__nav {
+            text-align: center;
+            margin-bottom: 5%;
+        }
+    }
 
-@media screen and (max-width: 600px) {
-    .header, .content {
+    .content {
         flex-direction: column-reverse;
         align-items: center;
-    }
-
-    .header__title {
-        margin-bottom: 0.5em;
-    }
-
-    .header__nav {
-        text-align: center;
-    }
-
-    .content__image {
-        width: 50%;
-        margin-top: 20%;
-    }
-    .content__description {
-        width: 100%;
+        &__image {
+            width: 50%;
+            margin-top: 20%;
+        }
+        &__description {
+            width: 100%;
+        }
     }
 }
 
@@ -206,9 +218,9 @@ html {
     .header {
         margin: 0;
         margin-bottom: 3em;
-    }
-    .header__nav {
-        display: none;
+        &__nav {
+            display: none;
+        }
     }
     .font__white {
         color: $black !important;
