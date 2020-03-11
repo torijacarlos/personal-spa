@@ -42,6 +42,12 @@ html {
     }
 }
 
+.page {
+    &_home {
+        margin-top: 15%;
+    }
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -165,7 +171,7 @@ html {
 
 @media screen and (max-width: 600px) {
     .header, .content {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
 
@@ -179,6 +185,7 @@ html {
 
     .content__image {
         width: 50%;
+        margin-top: 20%;
     }
     .content__description {
         width: 100%;

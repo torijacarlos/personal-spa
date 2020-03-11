@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout page="home">
     <SEO title="home" />
     <div className="content__image">
       <img alt="torijacarlos photograph" src="https://www.gravatar.com/avatar/1e7501caa538ab02fe56cadf5ae46451?s=500" />
