@@ -5,7 +5,7 @@ import { OutboundLink } from "gatsby-plugin-google-analytics"
 const Header = () => (
     <div className="header">
         <h1 className="header__title">
-            torija<span className="font__white">carlos</span>
+            <Link to="/">torija<span className="font__white">carlos</span></Link>
         </h1>
         <div className="header__nav">
             <div>

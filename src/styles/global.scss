@@ -60,6 +60,13 @@ html {
         font-size: 3em;
         color: $title-color;
         font-weight: bold;
+        a {
+            color: $primary;
+            text-decoration: none;
+            &:active, &:visited {
+                color: $primary;
+            }
+        }
     }
 
     &__nav {
