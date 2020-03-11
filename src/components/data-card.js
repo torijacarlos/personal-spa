@@ -6,7 +6,7 @@ const DataCard = ({ title, values }) => (
         <h2>{title}</h2>
         <hr></hr>
         <ul>
-            {values.map((value) => <li>{value}</li>)}
+            {values.map((value, index) => <li key={index}>{value}</li>)}
         </ul>
     </div>
 )

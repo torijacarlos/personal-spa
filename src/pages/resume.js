@@ -28,11 +28,11 @@ const ResumePage = () => {
       <SEO title="resume" />
       <div className="resume">
         <div className="experience">
-          {experience.map((value) => <Experience {...value} />)}
+          {experience.map((value) => <Experience {...value} key={value.position + value.company} />)}
         </div>
         <div className="additional">
           <div>
-            {data.map((value) => <DataCard {...value} />)}
+            {data.map((value) => <DataCard {...value} key={value.title} />)}
           </div>
           <div className="additional__cert">
             <OutboundLink href="https://linkedin.com/in/torijacarlos/" target="_blank" rel="noopener noreferrer">

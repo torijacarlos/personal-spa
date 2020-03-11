@@ -9,7 +9,7 @@ const Experience = ({ position, web, company, term, responsibility, tasks, color
         <p className="experience__card__term">{term}</p>
         <p className="experience__card__responsibility">{responsibility}</p>
         <ul>
-            {tasks.map((value) => <li>{value}</li>)}
+            {tasks.map((value, index) => <li key={index}>{value}</li>)}
         </ul>
     </div>
 )
