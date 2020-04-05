@@ -24,7 +24,7 @@ const ResumePage = () => {
   const experience = useExperience();
   const data = useAdditionalData();
   return (
-    <Layout>
+    <Layout page="resume">
       <SEO title="resume" />
       <div className="resume">
         <div className="experience">

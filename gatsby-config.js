@@ -36,7 +36,7 @@ module.exports = {
         company: 'konfío',
         color: 'konfio',
         web: 'https://konfio.mx',
-        term: 'jan. 2019 – now (1 year 2 month)',
+        term: 'jan. 2019 – now (1 year 4 months)',
         responsibility: 'Bring Konfio to an stage in which we can provide our services in a Bank as a service (BaaS) model',
         tasks: [
           'Outline how a multiproduct ecosystem will work within our systems, leaning towards a bank as a service future',
