@@ -14,7 +14,6 @@ const Header = () => (
             </div>
             <div className="header__social">
                 <OutboundLink href="https://github.com/torijacarlos/" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></OutboundLink>
-                <OutboundLink href="https://twitter.com/torijacarlos/" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></OutboundLink>
                 <OutboundLink href="https://linkedin.com/in/torijacarlos/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></OutboundLink>
                 <OutboundLink href="https://instagram.com/torijacarlos.stuff/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></OutboundLink>
             </div>
