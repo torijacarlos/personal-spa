@@ -11,7 +11,7 @@ export default function Home() {
                 </div> 
             </div>
             <div className={styles.description}>
-                <p>Driven to enable individual's <span className="textAccent">growth</span> in my ecosystem,
+                <p>Driven to enable individual's <span className="textAccent">growth</span>,
                 focused on mentoring engineering talent in <span className="textAccent">México</span></p>
                 <p>Developer and <span className="textAccent">architect</span> with strong opinions open to debate</p>
                 <p>Also an <span className="textAccent">otaku</span>, gamer, cook and baker</p>

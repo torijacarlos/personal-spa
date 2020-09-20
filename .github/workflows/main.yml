@@ -11,9 +11,9 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Build page
-      run: npm run build
+      run: npm run build && npm run export
     - name: Sync files with S3 bucket
-      run: aws s3 sync ./public s3://torijacarlos.com
+      run: aws s3 sync ./out s3://torijacarlos.com
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
