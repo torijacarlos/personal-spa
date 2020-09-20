@@ -28,7 +28,7 @@ export default function Layout({ title, children }) {
                 <meta name="theme-color" content="#ffffff"></meta>
             </Head>
             <div className={styles.header}>
-                <img src="/torijacarlos-white.png"></img>
+                <img className={styles.logo} src="/torijacarlos-white.png"></img>
                 <div className={styles.navigation}>
                     <Link href="/"><a>home</a></Link>
                     <Link href="/resume"><a>resume</a></Link>

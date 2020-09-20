@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    img {
+    .logo {
         width: 8%;
     }
 }
@@ -19,14 +19,45 @@
 }
 
 .content {
-    width: 1000px;
-    margin: 0 auto;
+    width: 60%;
+    margin: 3em auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 
 .homeContent {
     margin: 10em auto;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+    .header  img {
+        width: 35%;
+    }
+    .content {
+        width: 80%;
+    }
+    .homeContent {
+        margin: 3em auto;
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+}
+
+@media print {
+    .navigation {
+        display: none;
+    }
+    .content {
+        width: 90%;
+    }
+    .header {
+        width: 90%;
+        align-items: flex-start;
+        img.logo {
+            content: url("/torijacarlos-black.png");
+        }
+    }
 }

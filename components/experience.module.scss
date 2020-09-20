@@ -1,0 +1,41 @@
+@import "../styles/variables";
+
+.experience {
+    margin-bottom: 2em;
+}
+
+.expTitle {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.fondeadoraTitle {
+    color: $fondeadora-color;
+}
+
+.konfíoTitle {
+
+    color: $konfio-color;
+}
+
+.netsoftTitle {
+    color: $netsoft-color;
+}
+
+.expDates {
+    font-size: .8em;
+}
+
+.expDescription {
+    margin-top: 1em;
+}
+
+.expResps {
+    ul {
+        margin: 1em 0;
+        padding: 0;
+    }
+    li {
+        margin-left: 1em;
+    }
+}

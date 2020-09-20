@@ -11,12 +11,16 @@ export default function Home() {
                 </div> 
             </div>
             <div className={styles.description}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                
-                Sed blandit mi sed commodo vulputate. Aliquam nunc ipsum, feugiat id mollis sed, pretium sed erat.
-                Nulla vulputate dapibus semper. Integer nec magna libero. Aliquam blandit lorem sit amet elit placerat laoreet. Ut in imperdiet quam. Morbi posuere non est eget bibendum. Nunc ac nibh sed massa blandit semper sit amet vitae lacus.
+                <p>Driven to enable individual's <span className="textAccent">growth</span> in my ecosystem,
+                focused on mentoring engineering talent in <span className="textAccent">México</span></p>
+                <p>Developer and <span className="textAccent">architect</span> with strong opinions open to debate</p>
+                <p>Also an <span className="textAccent">otaku</span>, gamer, cook and baker</p>
+                <p>values: balance, wisdom and wonder</p>
             </div>
         </Layout>
     )
 }
 
+
+
+// <p>My definition of success entails being self-sufficient</p> 
