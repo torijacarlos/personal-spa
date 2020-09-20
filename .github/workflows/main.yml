@@ -11,7 +11,7 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Build page
-      run: npm run build && npm run export
+      run: export NODE_ENV=production && npm run build && npm run export
     - name: Sync files with S3 bucket
       run: aws s3 sync ./out s3://torijacarlos.com
       env:
