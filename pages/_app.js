@@ -15,6 +15,12 @@ function MyApp({ Component, pageProps }) {
     }
   }, [router.events])
 
+  useEffect(() => {
+    if (router.pathname == "/" && router.asPath != router.pathname) {
+      router.push(router.asPath)
+    }
+  }, []);
+
   return <Component {...pageProps} />
 }
 
