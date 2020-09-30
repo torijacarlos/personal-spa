@@ -11,11 +11,12 @@ export default function Home() {
                 </div> 
             </div>
             <div className={styles.description}>
-                <p>Driven to enable individual's <span className="textAccent">growth</span>,
-                focused on mentoring engineering talent in <span className="textAccent">México</span></p>
+                <p></p>
                 <p>Developer and <span className="textAccent">architect</span> with strong opinions open to debate</p>
-                <p>Also an <span className="textAccent">otaku</span>, gamer, cook and baker</p>
-                <p>values: balance, wisdom and wonder</p>
+                <p>I value the <span className="textAccent">balance</span> needed to know when good is enough, 
+                the <span className="textAccent">wisdom</span> to let go of things out of my control, 
+                and the <span className="textAccent">wonder</span> brought by a sense of discovery and learning</p>
+                <p>Artist, gamer, <span className="textAccent">weeb</span>, cook and baker</p>
             </div>
         </Layout>
     )
