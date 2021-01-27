@@ -9,8 +9,9 @@
     "export": "next export"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "5.15.2",
     "classnames": "2.2.6",
-    "next": "9.5.3",
+    "next": "^10.0.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "sass": "1.26.11"

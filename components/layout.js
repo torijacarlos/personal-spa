@@ -8,7 +8,19 @@ export default function Layout({ title, children }) {
     return (
         <div>
             <Head>
-                <title>{title} | torijacarlos</title>
+                <title>{title} - Carlos Torija | AWS Solutions Architect working in Mexico's FinTech</title>
+                <meta name="title" content="Carlos Torija | AWS Solutions Architect working in FinTech" />
+                <meta name="description" content="Solutions architect currently focused in Mexico's fintech products" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://torijacarlos.com/" />
+                <meta property="og:title" content="Carlos Torija | AWS Solutions Architect working in FinTech" />
+                <meta property="og:description" content="Solutions architect currently focused in Mexico's fintech products" />
+                <meta property="og:image" content="/torijacarlos-logo.png" />
+                <meta property="twitter:card" content="summary" />
+                <meta property="twitter:url" content="https://torijacarlos.com/" />
+                <meta property="twitter:title" content="Carlos Torija | AWS Solutions Architect working in FinTech" />
+                <meta property="twitter:description" content="Solutions architect currently focused in Mexico's fintech products" />
+                <meta property="twitter:image" content="https://torijacarlos.com/"></meta>
                 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
                 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
                 <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
