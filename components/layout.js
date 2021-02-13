@@ -11,6 +11,7 @@ export default function Layout({ title, children }) {
                 <title>{title} - Carlos Torija | AWS Solutions Architect working in Mexico's FinTech</title>
                 <meta name="title" content="Carlos Torija | AWS Solutions Architect working in FinTech" />
                 <meta name="description" content="Solutions architect currently focused in Mexico's fintech products" />
+                <meta name="keywords" content="solutions architect, aws, fintech, developer, python, docker, mexico, engineer, amazon web services, architect, tech consulting" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://torijacarlos.com/" />
                 <meta property="og:title" content="Carlos Torija | AWS Solutions Architect working in FinTech" />
