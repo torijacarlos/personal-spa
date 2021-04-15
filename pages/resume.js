@@ -44,7 +44,7 @@ const experienceData = [
         company: "fondeadora",
         role: "VP of Engineering",
         startDate: new Date(2020, 6, 1),
-        endDate: null,
+        endDate: new Date(2021, 4, 15),
         description: "Enable the engineering team's growth",
         responsibilities: [
             "Create, structure and mentor the Data Engineering team that handles the organization's analytics and governance of data",
